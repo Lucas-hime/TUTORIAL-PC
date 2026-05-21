@@ -1,0 +1,117 @@
+{
+  "windowsVersion": "Windows 11",
+  "overlayMode": "transparentAlwaysOnTop",
+  "multiMonitor": true,
+  "defaultMonitors": 2,
+  "characters": {
+    "mel": {
+      "mustBeDog": true,
+      "breed": "yorkshire",
+      "role": "main teacher",
+      "fur": "black and brown",
+      "appearance": "small friendly expressive dog",
+      "animation": "runToSafeCorner",
+      "forbidden": [
+        "paperclip",
+        "robot",
+        "human",
+        "abstract icon",
+        "famous character",
+        "external asset"
+      ]
+    },
+    "minie": {
+      "mustBeDog": true,
+      "breed": "yorkshire",
+      "role": "tips assistant",
+      "fur": "silver and brown",
+      "ears": "pointed",
+      "appearance": "small friendly expressive dog",
+      "forbidden": [
+        "paperclip",
+        "robot",
+        "human",
+        "abstract icon",
+        "famous character",
+        "external asset"
+      ]
+    }
+  },
+  "visualAids": [
+    "pointerGuide",
+    "pulseHighlight",
+    "focusMask",
+    "arrow",
+    "speechBubble",
+    "mascotRun"
+  ],
+  "alwaysVisibleControls": [
+    "closeTutorial",
+    "pauseTutorial",
+    "resumeTutorial",
+    "repeatDemo",
+    "imLost"
+  ],
+  "validationTypes": [
+    "fileExists",
+    "folderExists",
+    "activeWindow",
+    "uiaElementVisible",
+    "regionClick",
+    "multipleChoice",
+    "sequenceOrder",
+    "windowBounds",
+    "masteryGate",
+    "manualResponsibleCheck"
+  ],
+  "layoutRules": {
+    "noOverlap": true,
+    "noHorizontalOverflow": true,
+    "controlsAboveMascots": true,
+    "clickThroughExceptControls": true,
+    "safeCornerRequired": true
+  },
+  "testViewports": [
+    {
+      "width": 1366,
+      "height": 768,
+      "scale": 1.0,
+      "monitors": 1
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "scale": 1.0,
+      "monitors": 1
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "scale": 1.0,
+      "monitors": 2
+    },
+    {
+      "width": 3840,
+      "height": 1080,
+      "scale": 1.25,
+      "monitors": 2
+    }
+  ],
+  "version": "4.0.0",
+  "requiredFirstModule": "tutorial_controls",
+  "strictDelivery": {
+    "noTodos": true,
+    "noPlaceholders": true,
+    "finalReportRequired": true,
+    "installerRequired": true,
+    "testsRequired": [
+      "typecheck",
+      "lint",
+      "test",
+      "test:e2e",
+      "test:layout",
+      "test:overlay",
+      "build:win"
+    ]
+  }
+}

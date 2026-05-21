@@ -1,0 +1,30 @@
+{
+  "appId": "com.familia.melminie.tutorpc.overlay",
+  "productName": "Mel e Minie Tutor PC",
+  "artifactName": "Mel_e_Minie_Tutor_PC_Instalador.${ext}",
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Mel e Minie Tutor PC",
+    "uninstallDisplayName": "Mel e Minie Tutor PC"
+  },
+  "extraResources": [
+    {
+      "from": "native/MelMinie.UIAHelper/bin/Release/net8.0-windows",
+      "to": "uia-helper"
+    }
+  ]
+}
