@@ -16,3 +16,9 @@
 
 ## Falhou
 - npm install segue bloqueado por E403 no ambiente Codex
+
+## Implementado (rodada atual)
+- tipagem global de window.melMinieApi criada.
+
+## Não testado (rodada atual)
+- typecheck segue não executado por bloqueio de npm install no ambiente Codex.
