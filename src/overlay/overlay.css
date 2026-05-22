@@ -1,0 +1,10 @@
+ .visual-overlay-root { position: fixed; inset: 0; pointer-events: none; background: transparent; overflow: hidden; }
+.controls-overlay-root { position: fixed; top: 0; left: 0; pointer-events: auto; background: transparent; padding: 8px; display: flex; gap: 8px; }
+.focus-mask { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.2); }
+.pulse-highlight { position: absolute; left: 40%; top: 35%; width: 140px; height: 80px; border: 3px solid #ffd54a; border-radius: 10px; animation: pulse 1s ease-in-out infinite; transform-origin: center; }
+.pointer-guide { position: absolute; left: calc(40% + 50px); top: calc(35% + 90px); width: 18px; height: 18px; border-radius: 50%; background: #ffffff; animation: guide 1.2s ease-in-out infinite; }
+.arrow-guide { position: absolute; left: calc(40% - 28px); top: calc(35% + 18px); color: #ffd54a; font-size: 28px; }
+.mel-safe-corner { position: absolute; top: 16px; left: 16px; width: 130px; }
+.minie-tip-corner { position: absolute; top: 16px; right: 16px; width: 120px; }
+@keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.06); opacity: .65; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes guide { 0% { transform: translate(0,0); } 50% { transform: translate(8px,8px); } 100% { transform: translate(0,0); } }
