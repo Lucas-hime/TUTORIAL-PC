@@ -22,3 +22,7 @@
 
 ## Não testado (rodada atual)
 - typecheck segue não executado por bloqueio de npm install no ambiente Codex.
+
+## Implementado (auditoria de consistência API)
+- Estrutura de `window.melMinieApi` no preload alinhada ao contrato tipado (`overlay`, `progress`, `settings`, `uia`, `external`).
+- Métodos sem canal IPC correspondente no main retornam `Promise.resolve({ unsupported: true })` para evitar quebra em runtime até integração completa.
