@@ -1,0 +1,22 @@
+{
+  "appId": "com.melminie.tutorpc",
+  "productName": "Mel e Minie Tutor PC",
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "package.json",
+    "native/MelMinie.UIAHelper/bin/Release/net8.0-windows/**/*"
+  ],
+  "directories": { "output": "release" },
+  "win": {
+    "target": ["nsis"],
+    "artifactName": "Mel_e_Minie_Tutor_PC_Instalador.exe"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Mel e Minie Tutor PC"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "modules": [
+    "Conhecendo o tutorial",
+    "Janelas e duas telas no Windows 11",
+    "Explorador de Arquivos",
+    "Word real",
+    "PowerPoint real",
+    "Internet",
+    "ChatGPT",
+    "Organização do PC",
+    "Revisões"
+  ],
+  "tutorialControls": [
+    "Abrir o tutorial pelo atalho da área de trabalho",
+    "Entender que a Mel aparece por cima da tela",
+    "Pausar o tutorial",
+    "Retomar o tutorial",
+    "Repetir demonstração",
+    "Usar Estou perdida",
+    "Fechar o tutorial com segurança",
+    "Abrir novamente e continuar de onde parou"
+  ]
+}
